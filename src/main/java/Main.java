@@ -24,10 +24,10 @@ public class Main {
         List<Ammunition> glovesList = new ArrayList<>();
         List<Ammunition> overallsList = new ArrayList<>();
         List<Ammunition> shoesList = new ArrayList<>();
-        ShoesFactory shoesFactory = new ShoesFactory();
-        HelmetFactory helmetFactory = new HelmetFactory();
-        GlovesFactory glovesFactory = new GlovesFactory();
-        OverallsFactory overallsFactory = new OverallsFactory();
+        ShoesFactory shoesFactory = ShoesFactory.getInstance();
+        HelmetFactory helmetFactory =  HelmetFactory.getInstance();
+        GlovesFactory glovesFactory =  GlovesFactory.getInstance();
+        OverallsFactory overallsFactory =  OverallsFactory.getInstance();
         Random randomSize = new Random();
         Random randomType = new Random();
         Motorcyclist motorcyclist = new Motorcyclist();
